@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 02px 20px;
+    background-color: #bcd5ee;
+}
+
+.logo {
+    flex-grow: ; /* Permet au logo de prendre de l'espace */
+    display: flex; /* Utilise Flexbox pour centrer le logo */
+    justify-content: center; /* Centre le logo horizontalement */
+}
+
+.logo img {
+    height: 60px; /* Ajustez la hauteur du logo ici */
+    width: auto; /* Maintient les proportions du logo */
+}
+
+.home-icon {
+    margin-left: 1000px; /* Ajustez cette valeur pour rapprocher l'icône */
+}
+
+.home-icon img {
+    height: 30px; /* Taille de l'icône home */
+}
+
+.language-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.language-toggle button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.language-toggle button:hover {
+    text-decoration: underline;
+}
