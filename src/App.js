@@ -3,12 +3,15 @@ import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import FlightData from './components/FlightData';
+import './HomePage.css';
+import artworkImage from '../assets/Untitled_Artwork.jpg';
 
 const App = () => {
   return(
     <div>
       <Header />
       <h2>Contenu principal</h2>
+      <HomePage/>
       <Navbar/>
       <FlightData />
     </div>

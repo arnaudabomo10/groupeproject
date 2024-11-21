@@ -1,0 +1,11 @@
+/* src/components/HomePage.css */
+.homepage {
+    text-align: center; /* Centre le texte */
+    padding: 20px; /* Ajoute de l'espacement autour du contenu */
+  }
+  
+  .artwork-image {
+    max-width: 100%; /* Rend l'image responsive */
+    height: auto; /* Maintient les proportions de l'image */
+  }
+  
