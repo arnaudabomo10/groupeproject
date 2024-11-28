@@ -12,7 +12,7 @@ const FlightData = () => {
           method: 'GET',
           headers: {
             'X-RapidAPI-Host': 'sky-scanner3.p.rapidapi.com', // Remplacez par l'hôte correct si nécessaire
-            'X-RapidAPI-Key': 'd7d4ce0b58msh77a8a52a7c61bf4p139ccajsnbb0e365cd96b', // Remplacez par votre clé API RapidAPI
+            'X-RapidAPI-Key': '83b87d8cd9msh773b98ed53643f3p19ee5ajsnb2952763c4e7', // Remplacez par votre clé API RapidAPI
           },
         });
 

@@ -1,19 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css'; // Assurez-vous que ce fichier CSS est dans le même répertoire
+import logo from '../../Assets/image.jpg'; // Chemin relatif vers l'image
+import navbarIcon from '../../Assets/icon.png'; // Chemin relatif vers votre icône navbar
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  // Fonction pour gérer l'affichage du menu
+  const toggleMenu = () => {
+    console.log("Avant :", showMenu);
+    setShowMenu(!showMenu);
+    console.log("Après :", !showMenu);
+  };
+
   return (
     <header className="header">
       <div className="logo">
-        <img src="https://cdn.pixabay.com/photo/2020/02/27/20/48/aircraft-4885805_1280.jpg" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </div>
-      <div className="home-icon">
-        <a href="/">
-          <img src="https://clipground.com/images/white-home-icon-transparent-png-6.png" alt="Home" />
-        </a>
+      <div className="navbar-icon" onClick={toggleMenu}>
+        <img src={navbarIcon} alt="Navbar Icon" />
       </div>
-      <div className="language-toggle">
-        <button>Fr</button>/<button>En</button>
+      <div className={`menu ${showMenu ? 'show' : ''}`}>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
       </div>
     </header>
   );
