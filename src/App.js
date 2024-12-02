@@ -7,6 +7,7 @@ import HomePage from './components/HomePage/HomePage'; // Composant pour la page
 import AboutPage from './components/AboutPage/AboutPage'; // Composant pour la page About
 import FlightData from './components/FlightData'; // Importer le composant FlightData
 
+
 const App = () => {
   return (
     <Router>
